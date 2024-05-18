@@ -15,7 +15,9 @@ function App() {
       format: "json",
       method: "POST",
       url: "http://localhost:8080/upload",
-      headers: {},
+      headers: {
+        Authorization: `Bearer afgfgfgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`
+      },
       prepareData: function (formData) {
         var file = formData.getAll("files[0]")[0];
         formData.forEach((value, key) => {
